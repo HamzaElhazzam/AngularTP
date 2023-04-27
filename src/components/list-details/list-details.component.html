@@ -1,0 +1,42 @@
+<div class="container my-5">
+    <h1 class="mb-3">Edit Product</h1>
+    <form>
+       
+            <fieldset>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="id" class="form-label">Id</label>
+                            <input readonly type="text" id="id" class="form-control"  name="id" [(ngModel)]= "productDetails.id">
+                          </div>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" id="title" class="form-control" name="title" [(ngModel)]= "productDetails.title">
+                          </div>
+                          <div class="mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="text" id="price" class="form-control"  name="price" [(ngModel)]= "productDetails.price">
+                          </div>
+                          <div class="mb-3">
+                            <label for="category" class="form-label">Category</label>
+                            <input type="text" id="category" class="form-control"  name="category" [(ngModel)]= "productDetails.category">
+                          </div>
+                          <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <input type="text" id="description" class="form-control"  name="description" [(ngModel)]= "productDetails.description">
+                          </div>
+                          <div class="mb-3">
+                            <label for="image" class="form-label">image</label> <br>
+                            <img width="70" height="70" [src]="productDetails.image" alt="">
+                          </div>
+                          <a routerLink="test" class="btn btn-primary mr-5">Submit</a>
+                          
+
+                    </div>
+                </div>
+              
+            </fieldset>
+          
+    </form>
+
+</div>
