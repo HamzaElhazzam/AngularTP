@@ -1,37 +1,36 @@
 <div class="container my-5">
-    <h1 class="mb-3">Edit Product</h1>
-    <form >
+    <h1 class="mb-3">Add New Employee</h1>
+    <form #form="ngForm" (ngSubmit)="addProduct()">
        
             <fieldset>
                 <div class="row">
                     <div class="col-6">
                         <div class="mb-3">
                             <label for="id" class="form-label">Id</label>
-                            <input readonly type="text" id="id" class="form-control"  name="id" [(ngModel)]= "productDetails.id">
+                            <input type="text" id="id" class="form-control"  name="id" [(ngModel)]= "product.id">
                           </div>
                         <div class="mb-3">
                             <label for="title" class="form-label">Title</label>
-                            <input type="text" id="title" class="form-control" name="title" [(ngModel)]= "productDetails.title">
+                            <input type="text" id="title" class="form-control" name="title" [(ngModel)]= "product.title">
                           </div>
                           <div class="mb-3">
                             <label for="price" class="form-label">Price</label>
-                            <input type="text" id="price" class="form-control"  name="price" [(ngModel)]= "productDetails.price">
+                            <input type="text" id="price" class="form-control"  name="price" [(ngModel)]= "product.price">
                           </div>
                           <div class="mb-3">
                             <label for="category" class="form-label">Category</label>
-                            <input type="text" id="category" class="form-control"  name="category" [(ngModel)]= "productDetails.category">
+                            <input type="text" id="category" class="form-control"  name="category" [(ngModel)]= "product.category">
                           </div>
                           <div class="mb-3">
                             <label for="description" class="form-label">Description</label>
-                            <input type="text" id="description" class="form-control"  name="description" [(ngModel)]= "productDetails.description">
+                            <input type="text" id="description" class="form-control"  name="description" [(ngModel)]= "product.description">
                           </div>
                           <div class="mb-3">
-                            <label for="image" class="form-label">image</label> <br>
-                            <img width="70" height="70" [src]="productDetails.image" alt="">
+                            <label for="image" class="form-label">image</label>
+                            <input type="text" id="image" class="form-control"  name="image" [(ngModel)]= "product.image">
                           </div>
-                          <a routerLink="test" class="btn btn-primary mr-5">Submit</a>
                           
-
+                          <button type="submit" class="btn btn-primary">Add product</button>
                     </div>
                 </div>
               

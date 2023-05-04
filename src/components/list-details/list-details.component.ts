@@ -26,6 +26,7 @@ export class ListDetailsComponent {
         if(id){
           this.editservice.getProduct(id).subscribe({
             next:(response)=> {
+              console.log(response);
               this.productDetails = response;
             }
           })

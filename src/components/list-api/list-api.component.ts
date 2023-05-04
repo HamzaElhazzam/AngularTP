@@ -14,6 +14,7 @@ export class ListApiComponent {
   ngOnInit():void{
     this.product.getData().subscribe((data)=>{
       this.myData=data;
+      console.log(data);
     });
   }
 }
